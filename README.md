@@ -14,6 +14,60 @@ Therefore requires the following dependencies:
 
 For more information, visit that [repo](https://github.com/jamesiarmes/php-ews/)
 
+# Install (Laravel)
+
+Add the package to your composer.json and run composer update.
+```json
+"require": {
+    "adeboyed/laravel-exchange-driver": "~1.0"
+},
+```
+
+or installed with composer
+```
+$ composer require adeboyed/laravel-exchange-driver
+```
+
+Add the Exchange service provider in config/app.php:
+(Laravel 5.5+ uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.)
+```php
+'providers' => [
+    Adeboyed\LaravelExchangeDriver\ExchangeAddedServiceProvider::class
+];
+```
+
+# Install (Lumen)
+
+Add the package to your composer.json and run composer update.
+```json
+"require": {
+    "adeboyed/laravel-exchange-driver": "~1.0"
+},
+```
+
+or installed with composer
+```bash
+$ composer require adeboyed/laravel-exchange-driver
+```
+
+Add the sendgrid service provider in bootstrap/app.php
+```php
+$app->configure('mail');
+$app->configure('services');
+$app->register(Adeboyed\LaravelExchangeDriver\ExchangeServiceProvider::class);
+
+unset($app->availableBindings['mailer']);
+```
+
+Create mail config files.
+config/mail.php
+```php
+<?php
+return [
+    'driver' => env('MAIL_DRIVER', 'exchange'),
+];
+```
+
 ## Configure
 
 .env

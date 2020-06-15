@@ -9,7 +9,7 @@ use \jamesiarmes\PhpEws\Enumeration\MessageDispositionType;
 use Adeboyed\LaravelExchangeDriver\Transport\ExchangeTransport;
 
 
-class ExchangeAddedTransportManager extends ServiceProvider
+class ExchangeAddedServiceProvider extends ServiceProvider
 {
     /**
      * Register the Swift Transport instance.
@@ -28,7 +28,6 @@ class ExchangeAddedTransportManager extends ServiceProvider
 
                 return new ExchangeTransport($host, $username, $password, $messageDispositionType);
             });
-
         });
     }
 }

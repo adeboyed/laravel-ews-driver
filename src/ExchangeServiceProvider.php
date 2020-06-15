@@ -2,7 +2,7 @@
 
 namespace Adeboyed\LaravelExchangeDriver;
 
-use Adeboyed\LaravelExchangeDriver\ExchangeAddedTransportManager;
+use Adeboyed\LaravelExchangeDriver\ExchangeAddedServiceProvider;
 use Illuminate\Mail\MailServiceProvider;
 
 class ExchangeServiceProvider extends MailServiceProvider
@@ -12,7 +12,6 @@ class ExchangeServiceProvider extends MailServiceProvider
     {
         parent::register();
 
-        $this->app->register(ExchangeAddedTransportManager::class);
+        $this->app->register(ExchangeAddedServiceProvider::class);
     }
-    
 }
