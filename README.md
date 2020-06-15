@@ -72,8 +72,11 @@ return [
 
 .env
 ```
-MAIL_DRIVER=sendgrid
-SENDGRID_API_KEY='YOUR_SENDGRID_API_KEY'
+MAIL_DRIVER=exchange
+MAIL_HOST=webmail.example.com
+MAIL_USERNAME=examplemail
+MAIL_PASSWORD=examplepassword
+MAIL_MESSAGE_DISPOSITION_TYPE=SaveOnly|SendAndSaveCopy|SendOnly
 ```
 
 config/mail.php (In using lumen, require creating config directory and file.)
