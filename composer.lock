@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10662ee82b83850e6e385246e436044c",
+    "content-hash": "b02cb826e8fe311e0d5a1cc3ab2b1886",
     "packages": [
         {
             "name": "jamesiarmes/php-ntlm",
@@ -1644,7 +1644,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.1"
