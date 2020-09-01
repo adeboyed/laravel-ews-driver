@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Adeboyed\\LaravelSendgridDriver\\SendgridTransportServiceProvider"
+                "Adeboyed\\LaravelExchangeDriver\\ExchangeAddedServiceProvider"
             ]
         }
     }
