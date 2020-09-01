@@ -12,7 +12,6 @@ use \jamesiarmes\PhpEws\ArrayType\ArrayOfRecipientsType;
 use \jamesiarmes\PhpEws\ArrayType\NonEmptyArrayOfAllItemsType;
 
 use \jamesiarmes\PhpEws\Enumeration\BodyTypeType;
-use \jamesiarmes\PhpEws\Enumeration\MessageDispositionType;
 use \jamesiarmes\PhpEws\Enumeration\ResponseClassType;
 
 use \jamesiarmes\PhpEws\Type\BodyType;

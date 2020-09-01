@@ -1,6 +1,10 @@
 Laravel Exchange Web Services Driver
 ====
 
+![Packagist Version](https://img.shields.io/packagist/v/adeboyed/laravel-ews-driver)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/adeboyed/laravel-ews-driver)
+
+
 A Mail Driver with support for Exchange Web Services, using the original Laravel API. This library extends the original Laravel classes, so it uses exactly the same methods.
 This package requires a access to a EWS host.
 
@@ -19,13 +23,13 @@ For more information, visit that [repo](https://github.com/jamesiarmes/php-ews/)
 Add the package to your composer.json and run composer update.
 ```json
 "require": {
-    "adeboyed/laravel-exchange-driver": "~1.0"
+    "adeboyed/laravel-ews-driver": "~1.0.2"
 },
 ```
 
-or installed with composer
+or install with composer
 ```
-$ composer require adeboyed/laravel-exchange-driver
+$ composer require adeboyed/laravel-ews-driver
 ```
 
 Add the Exchange service provider in config/app.php:
@@ -41,16 +45,16 @@ Add the Exchange service provider in config/app.php:
 Add the package to your composer.json and run composer update.
 ```json
 "require": {
-    "adeboyed/laravel-exchange-driver": "~1.0"
+    "adeboyed/laravel-ews-driver": "~1.0.2"
 },
 ```
 
-or installed with composer
+or install with composer
 ```bash
-$ composer require adeboyed/laravel-exchange-driver
+$ composer require adeboyed/laravel-ews-driver
 ```
 
-Add the sendgrid service provider in bootstrap/app.php
+Add the exchange service provider in bootstrap/app.php
 ```php
 $app->configure('mail');
 $app->configure('services');
@@ -79,7 +83,7 @@ MAIL_PASSWORD=examplepassword
 MAIL_MESSAGE_DISPOSITION_TYPE=SaveOnly|SendAndSaveCopy|SendOnly
 ```
 
-config/mail.php (In using lumen, require creating config directory and file.)
+config/mail.php (In using lumen, this requires creating config directory and file, [see more here](https://lumen.laravel.com/docs/5.7/mail))
 ```php
     'mailers' => [
         'exchange' => [
