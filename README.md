@@ -23,7 +23,7 @@ For more information, visit that [repo](https://github.com/jamesiarmes/php-ews/)
 Add the package to your composer.json and run composer update.
 ```json
 "require": {
-    "adeboyed/laravel-ews-driver": "~1.1"
+    "adeboyed/laravel-ews-driver": "~1.1.1"
 },
 ```
 
@@ -45,7 +45,7 @@ Add the Exchange service provider in config/app.php:
 Add the package to your composer.json and run composer update.
 ```json
 "require": {
-    "adeboyed/laravel-ews-driver": "~1.1"
+    "adeboyed/laravel-ews-driver": "~1.1.1"
 },
 ```
 

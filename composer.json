@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Adeboyed\\LaravelExchangeDriver\\ExchangeAddedServiceProvider"
+                "Adeboyed\\LaravelExchangeDriver\\ExchangeServiceProvider"
             ]
         }
     }
