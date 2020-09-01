@@ -3,7 +3,7 @@
     "description": "Adds Exchange Web Services Mail Support to Laravel.",
     "keywords": ["laravel", "exchange", "ews"],
     "homepage": "https://github.com/adeboyed/laravel-ews-driver",
-    "license": "APACHE",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "David Adeboye",
